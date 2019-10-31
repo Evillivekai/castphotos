@@ -3,7 +3,7 @@ require('dotenv').config();
 const Console = console;
 const app = require('./app.js');
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5050;
 
 app.listen(port, () => {
   Console.log(Date());
