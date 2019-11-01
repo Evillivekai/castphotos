@@ -23,7 +23,7 @@ class App extends React.Component {
   fetch() {
     var id = window.location.search.slice(4) || 1;
     $.get({
-      url: 'http://localhost:5050/api/movie',
+      url: 'http://ec2-13-57-223-10.us-west-1.compute.amazonaws.com:5050/api/movie',
       data: {id: id},
       success: (res) => {
         this.setState({casts: res});
